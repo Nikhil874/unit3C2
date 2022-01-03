@@ -31,6 +31,8 @@ itemsdiv.append(div1);
     });
 }
 var arr=JSON.parse(localStorage.getItem("itemsarr"))||[];
+var count=document.getElementById("count");
+count.textContent=arr.length;
 function addedtocart(imagesrc,itemname,itemprice){
    console.log(imagesrc,itemname,itemprice);
    var obj={

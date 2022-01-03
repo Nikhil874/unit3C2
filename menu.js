@@ -13,7 +13,7 @@ fetchitems();
 function displayitems(arr){
     arr.map(function(elem){
 var itemsdiv=document.getElementById("items");
-var div1=document.createElement("div")
+var div2=document.createElement("div")
 var image=document.createElement("img");
 image.src=elem.strMealThumb;
 var name= document.createElement("h4");
@@ -26,8 +26,8 @@ price.textContent=Math.ceil((Math.random()*5))*100;
 addtocart.onclick=function(){
 addedtocart(image.src,name.textContent,price.textContent)
 };
-div1.append(image,name,price,addtocart);
-itemsdiv.append(div1);
+div2.append(image,name,price,addtocart);
+itemsdiv.append(div2);
     });
 }
 var arr=JSON.parse(localStorage.getItem("itemsarr"))||[];

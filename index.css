@@ -1,0 +1,15 @@
+#nav{
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+#login{
+    margin-left: 70%;
+}
+#signup{
+    margin-left: 5%;
+}
+#menu{
+    margin-left: 10px;
+}
